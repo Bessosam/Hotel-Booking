@@ -1,8 +1,10 @@
-import React from 'react';
-import Allrooms_1 from '../../assets/Allrooms_1.jpg';
-import Allrooms_2 from '../../assets/Allrooms_2.jpg';
-import Allrooms_3 from '../../assets/Allrooms_3.jpg';
-import Allrooms_4 from '../../assets/Allrooms_4.jpg';
+import React from "react";
+import Allrooms_1 from "../../assets/Allrooms_1.jpg";
+import Allrooms_2 from "../../assets/Allrooms_2.jpg";
+import Allrooms_3 from "../../assets/Allrooms_3.jpg";
+import Allrooms_4 from "../../assets/Allrooms_4.jpg";
+
+
 
 function HotelList() {
     const roomsData = [
@@ -11,24 +13,30 @@ function HotelList() {
             hotel: "Seaside Grand Hotel",
             roomType: "King Suite",
             pricePerNight: 450,
-            city: "New York",
-            address: "17 West 32nd Street, New York, NY 10001 USA",
+            city: "New york",
+            address: "17 West 32nd Street, New York, NY 10001 USA",
             amenities: ["Balcony", "Sea view", "High-speed Wifi"],
             images: Allrooms_1,
             rating: 4,
             isAvailable: true,
+            createdAt: "2025-04-12T09:15:00.000Z",
+            updatedAt: "2025-04-12T09:15:00.000Z",
+            __v: 0,
         },
         {
             _id: "b2d74d8298cd2345bcde0123",
             hotel: "Mountain View Resort",
             roomType: "Deluxe Queen Room",
             pricePerNight: 328,
-            city: "London",
-            address: "9 Knaresborough Place, London, England, SW5 0TP United Kingdom",
+            city: "london",
+            address: "9 Knaresborough Place, London, England, SW5 0TP United Kingdom",
             amenities: ["City view", "Mini bar", "Air conditioning"],
             images: Allrooms_2,
             rating: 5,
             isAvailable: true,
+            createdAt: "2025-04-13T10:20:00.000Z",
+            updatedAt: "2025-04-13T10:20:00.000Z",
+            __v: 0,
         },
         {
             _id: "c3e85e9399de3456cdef1234",
@@ -36,11 +44,19 @@ function HotelList() {
             roomType: "Family Suite",
             pricePerNight: 580,
             city: "Barcelona",
-            address: "C Provença 277, Eixample, Barcelona, Spain",
-            amenities: ["Two bedrooms", "Kitchenette", "Mountain view", "High-speed Wifi"],
+            address: "C Provença 277, Eixample, Barcelona, Spain",
+            amenities: [
+                "Two bedrooms",
+                "Kitchenette",
+                "Mountain view",
+                "High-speed Wifi",
+            ],
             rating: 4.2,
             images: Allrooms_3,
             isAvailable: false,
+            createdAt: "2025-04-14T11:30:00.000Z",
+            updatedAt: "2025-04-14T11:30:00.000Z",
+            __v: 0,
         },
         {
             _id: "d4f96f04aaff4567defg2345",
@@ -53,9 +69,11 @@ function HotelList() {
             images: Allrooms_4,
             rating: 4.8,
             isAvailable: true,
+            createdAt: "2025-04-15T12:45:00.000Z",
+            updatedAt: "2025-04-15T12:45:00.000Z",
+            __v: 0,
         },
     ];
-
     return (
         <div
             style={{
@@ -91,31 +109,30 @@ function HotelList() {
                             objectFit: 'cover',
                         }}
                     />
-
                     <div style={{ flex: 1 }}>
-                        <h2 style={{ margin: '0 0 10px 0', color: '#333' }}>
+                        <h2 style={{ margin: '0 0 10px 0' }}>
                             {room.hotel} - {room.roomType}
                         </h2>
-                        <p style={{ margin: '4px 0', color: '#555' }}>
+                        <p style={{ margin: '5px 0', color: '#555' }}>
                             <strong>City:</strong> {room.city}
                         </p>
-                        <p style={{ margin: '4px 0', color: '#555' }}>
+                        <p style={{ margin: '5px 0', color: '#555' }}>
                             <strong>Address:</strong> {room.address}
                         </p>
-                        <p style={{ margin: '4px 0', color: '#555' }}>
-                            <strong>Price per Night:</strong> ${room.pricePerNight}
+                        <p style={{ margin: '5px 0', color: '#555' }}>
+                            <strong>Price per night:</strong> ${room.pricePerNight}
                         </p>
-                        <p style={{ margin: '4px 0', color: '#555' }}>
+                        <p style={{ margin: '5px 0', color: '#555' }}>
+                            <strong>Rating:</strong> ⭐ {room.rating}
+                        </p>
+                        <p style={{ margin: '5px 0', color: '#555' }}>
                             <strong>Amenities:</strong> {room.amenities.join(', ')}
-                        </p>
-                        <p style={{ margin: '4px 0', color: '#555' }}>
-                            <strong>Rating:</strong> ⭐ {room.rating}/5
                         </p>
                         <p
                             style={{
-                                fontWeight: 'bold',
+                                marginTop: '10px',
                                 color: room.isAvailable ? 'green' : 'red',
-                                marginTop: '8px',
+                                fontWeight: 'bold',
                             }}
                         >
                             {room.isAvailable ? 'Available' : 'Not Available'}
@@ -127,4 +144,4 @@ function HotelList() {
     );
 }
 
-export default HotelList;
+export default HotelList
