@@ -1,6 +1,6 @@
 import React from 'react'
-import allrooms_2 from '../assets/Allrooms_2.jpg'
-import allrooms_3 from '../assets/Allrooms_3.jpg'
+import allrooms_2 from '../assets/allrooms_2.jpg'
+import allrooms_3 from '../assets/allrooms_3.jpg'
 
 function MyBooking() {
     const userBookingsData = [

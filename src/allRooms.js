@@ -1,7 +1,7 @@
-import Allrooms_1 from "../src/assets/Allrooms_1.jpg";
-import Allrooms_2 from "../src/assets/Allrooms_2.jpg";
-import Allrooms_3 from "../src/assets/Allrooms_3.jpg";
-import Allrooms_4 from "../src/assets/Allrooms_4.jpg";
+import Allrooms_1 from "../assets/allrooms_1.jpg";
+import Allrooms_2 from "../assets/allrooms_2.jpg";
+import Allrooms_3 from "../assets/allrooms_3.jpg";
+import Allrooms_4 from "../assets/allrooms_4.jpg";
 
 const roomsData = [
     {
