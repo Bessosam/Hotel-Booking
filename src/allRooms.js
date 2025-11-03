@@ -1,0 +1,73 @@
+import Allrooms_1 from "../src/assets/Allrooms_1.jpg";
+import Allrooms_2 from "../src/assets/Allrooms_2.jpg";
+import Allrooms_3 from "../src/assets/Allrooms_3.jpg";
+import Allrooms_4 from "../src/assets/Allrooms_4.jpg";
+
+const roomsData = [
+    {
+        _id: "a1f64c7197bc1234abcd9012",
+        hotel: "Seaside Grand Hotel",
+        roomType: "King Suite",
+        pricePerNight: 450,
+        city: "New york",
+        address: "17 West 32nd Street, New York, NY 10001 USA",
+        amenities: ["Balcony", "Sea view", "High-speed Wifi"],
+        images: Allrooms_1,
+        rating: 4,
+        isAvailable: true,
+        createdAt: "2025-04-12T09:15:00.000Z",
+        updatedAt: "2025-04-12T09:15:00.000Z",
+        __v: 0,
+    },
+    {
+        _id: "b2d74d8298cd2345bcde0123",
+        hotel: "Mountain View Resort",
+        roomType: "Deluxe Queen Room",
+        pricePerNight: 328,
+        city: "london",
+        address: "9 Knaresborough Place, London, England, SW5 0TP United Kingdom",
+        amenities: ["City view", "Mini bar", "Air conditioning"],
+        images: Allrooms_2,
+        rating: 5,
+        isAvailable: true,
+        createdAt: "2025-04-13T10:20:00.000Z",
+        updatedAt: "2025-04-13T10:20:00.000Z",
+        __v: 0,
+    },
+    {
+        _id: "c3e85e9399de3456cdef1234",
+        hotel: "Seaside Grand Hotel",
+        roomType: "Family Suite",
+        pricePerNight: 580,
+        city: "Barcelona",
+        address: "C Provença 277, Eixample, Barcelona, Spain",
+        amenities: [
+            "Two bedrooms",
+            "Kitchenette",
+            "Mountain view",
+            "High-speed Wifi",
+        ],
+        rating: 4.2,
+        images: Allrooms_3,
+        isAvailable: false,
+        createdAt: "2025-04-14T11:30:00.000Z",
+        updatedAt: "2025-04-14T11:30:00.000Z",
+        __v: 0,
+    },
+    {
+        _id: "d4f96f04aaff4567defg2345",
+        hotel: "Seaside Grand Hotel",
+        roomType: "Standard Twin Room",
+        pricePerNight: 270,
+        city: "Santorini",
+        address: "Fira, Santorini 84700, Greece",
+        amenities: ["Garden view", "Complimentary breakfast", "TV"],
+        images: Allrooms_4,
+        rating: 4.8,
+        isAvailable: true,
+        createdAt: "2025-04-15T12:45:00.000Z",
+        updatedAt: "2025-04-15T12:45:00.000Z",
+        __v: 0,
+    },
+];
+export default roomsData;
