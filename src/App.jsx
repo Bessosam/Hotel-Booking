@@ -21,7 +21,7 @@ function App() {
       <div className="min-h-[70vh]">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/hotels1" element={<AllHotels />} />
+          <Route path="/hotels" element={<AllHotels />} />
           <Route path="/rooms/:id" element={<RoomDetails />} />
           <Route path="/my-booking" element={<MyBooking />} />
           <Route path="/dashboard" element={<Layout />}>

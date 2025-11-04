@@ -6,7 +6,7 @@ import { FaBook } from "react-icons/fa";
 const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'Hotels', path: '/hotels1' },
+        { name: 'Hotels', path: '/hotels' },
         { name: 'Experience', path: '/experience' },
         { name: 'About', path: '/about' },
 
